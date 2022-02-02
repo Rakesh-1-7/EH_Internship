@@ -1,0 +1,13 @@
+Title: Cross Site Scripting (XSS)
+Domain: vulweb.com
+Subdomain: http://testasp.vulnweb.com/
+
+Steps to reproduce:
+Step 1: Visit http://vulweb.com
+Step 2: Click on the search option
+Step 3: Now use the payload <script>alert(1)</script>, on submitting you get an alert prompt.
+Impact: XSS can lead to stealing of user cookies and will be harmful for your company.
+
+mitigation: If you want to protect your website from XSS just enable noscript on browser
+
+POC including screenshot is in cluded in the report which is attatched below
